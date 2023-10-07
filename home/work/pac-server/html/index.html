@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+
+<head>
+    <title>Welcome use auto pac!</title>
+    <style>
+        html {
+            color-scheme: light dark;
+        }
+
+        body {
+            margin: 100 auto;
+            font-family: Tahoma, Verdana, Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <p>欢迎使用自动代理规则，请访问 http://<span id="welcome"></span>/pac-server/auto_switch.pac</p>
+    <script>
+        document.getElementById("welcome").innerHTML = window.location.host;
+    </script>
+</body>
+
+</html>
