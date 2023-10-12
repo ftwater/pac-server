@@ -4,6 +4,8 @@ FROM nginx
 COPY ./pac-server.conf /etc/nginx/conf.d/pac-server.conf
 # 复制对/pac-server的反向代理配置
 COPY ./default.conf /etc/nginx/conf.d/default.conf
+# 设置服务器时区为上海
+RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 # 工作目录设置
 WORKDIR /home/work
 # 挂载 /home/root作为工作目录
