@@ -97,6 +97,9 @@ var FindProxyForURL = function(init, profiles) {
         if (/(?:^|\.)chat-gpt-next-web\.vercel\.app$/.test(host)) return "+proxy";
         if (/(?:^|\.)poe\.com$/.test(host)) return "+proxy";
         if (/sharecuts\.cn$/.test(host)) return "+proxy";
+        if (/macwk\.cc$/.test(host)) return "+proxy";
+        if (/appstorrent\.ru$/.test(host)) return "+proxy";
+        if (/scootersoftware\.com$/.test(host)) return "+proxy";
         return "DIRECT";
     },
     "+proxy": function(url, host, scheme) {
